@@ -24,8 +24,8 @@ public class MRMain {
         String dst = "hdfs://us01:9000/mrdemo/input.txt";
         //输出路径，必须是不存在的，空文件加也不行。
         String dstOut = "hdfs://us01:9000/mrdemo//output.txt";
-        Configuration hadoopConfig = new Configuration();
-        Job job = Job.getInstance(hadoopConfig);
+        Configuration conf = new Configuration();
+        Job job = Job.getInstance(conf);
         //如果需要打成jar运行，需要下面这句
         job.setJarByClass(MRMain.class);
         //job执行作业时输入和输出文件的路径
