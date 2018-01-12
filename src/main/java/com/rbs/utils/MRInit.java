@@ -22,7 +22,7 @@ public class MRInit {
      * 一个或者多个保存着job信息的JobInit对象
      * @param jobs
      */
-    public static void init(JobInit[] jobs) throws IOException, ClassNotFoundException, InterruptedException {
+    public static void initAndRunJob(JobInit[] jobs) throws IOException, ClassNotFoundException, InterruptedException {
         for (JobInit jobInit : jobs){
             //检查hdfs上输出目录
             FileSystem fs = FileSystem.get(jobInit.getConf());

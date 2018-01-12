@@ -12,21 +12,32 @@
     <name>hadoopstudy</name>
     <url>http://maven.apache.org</url>
 
+    <!-- tools version setting -->
+    <properties>
+        <commons-lang3.version>3.3.2</commons-lang3.version>
+        <hadoop.version>2.7.0</hadoop.version>
+    </properties>
+
     <dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
-            <version>2.7.0</version>
+            <version>${hadoop.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-hdfs</artifactId>
-            <version>2.7.0</version>
+            <version>${hadoop.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
-            <version>2.7.0</version>
+            <version>${hadoop.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

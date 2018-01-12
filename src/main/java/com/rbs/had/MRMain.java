@@ -1,18 +1,16 @@
 package com.rbs.had;
 
+import com.rbs.utils.HdfsUtil;
+import com.rbs.utils.JobInit;
+import com.rbs.utils.MRInit;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
-import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
-
-import java.io.IOException;
-import java.util.StringTokenizer;
 
 /**
  * Created by fengtao.xue on 2018/1/7.
@@ -21,10 +19,15 @@ public class MRMain {
 
     public static void main(String[] args) throws Exception{
         //输入路径
-        String dst = "hdfs://us01:9000/mrdemo/input.txt";
-        //输出路径，必须是不存在的，空文件加也不行。
-        String dstOut = "hdfs://us01:9000/mrdemo//output.txt";
+        String dst = HdfsUtil.HDFS + "mrdemo/input.txt";
+        //输出路径，必须是不存在的
+        String dstOut = HdfsUtil.HDFS + "mrdemo/output.txt";
         Configuration conf = new Configuration();
+        JobInit job = new JobInit(new String[] {dst}, dstOut, conf, null,"mrdemo", MRMain.class,
+                null, MRMapper.class, Text.class, Text.class,
+                null, null, MRReducer.class, Text.class, Text.class);
+        MRInit.initAndRunJob(new JobInit[]{job});
+        /*
         Job job = Job.getInstance(conf);
         //如果需要打成jar运行，需要下面这句
         job.setJarByClass(MRMain.class);
@@ -40,6 +43,6 @@ public class MRMain {
         job.setOutputFormatClass(TextOutputFormat.class);
         //执行job，直到完成
         job.waitForCompletion(true);
-
+        */
     }
 }
