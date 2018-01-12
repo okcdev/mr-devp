@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.logging.Logger;
 
 /**
- * Created by admin on 2018/1/11.
+ * Created by fengtao.xue on 2018/1/11.
  */
 public class MRMapper extends Mapper<Object, Text, Text, Text> {
 
