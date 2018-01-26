@@ -10,7 +10,7 @@ import org.apache.hadoop.io.Text;
 import java.io.IOException;
 
 /**
- * Created by admin on 2018/1/26.
+ * Created by fengtao.xue on 2018/1/26.
  */
 public class HbMapper extends TableMapper<Text, IntWritable> {
     private final IntWritable ONE = new IntWritable(1);

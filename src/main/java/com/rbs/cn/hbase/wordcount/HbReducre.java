@@ -12,7 +12,7 @@ import javax.xml.soap.Text;
 import java.io.IOException;
 
 /**
- * Created by admin on 2018/1/26.
+ * Created by fengtao.xue on 2018/1/26.
  */
 public class HbReducre extends TableReducer<Text, IntWritable, ImmutableBytesWritable>{
     public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {

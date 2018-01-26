@@ -1,4 +1,4 @@
-package com.rbs.cn.hbase;
+package com.rbs.cn.hbase.hbutils;
 
 import com.rbs.cn.utils.HbaseJob;
 import org.apache.hadoop.hbase.client.Scan;
@@ -8,11 +8,11 @@ import org.apache.hadoop.mapreduce.Job;
 import java.io.IOException;
 
 /**
- * Created by admin on 2018/1/26.
+ * Created by fengtao.xue on 2018/1/26.
  */
 public class HbaseInit {
 
-    public void hbaseInit(HbaseJob hbaseJob) throws IOException, ClassNotFoundException, InterruptedException {
+    public static void hbaseInit(HbaseJob hbaseJob) throws IOException, ClassNotFoundException, InterruptedException {
 
         Job job;
         if (hbaseJob.getJob() == null) {
