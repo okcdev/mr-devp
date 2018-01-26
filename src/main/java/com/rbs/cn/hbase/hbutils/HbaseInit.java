@@ -1,6 +1,5 @@
 package com.rbs.cn.hbase.hbutils;
 
-import com.rbs.cn.utils.HbaseJob;
 import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.mapreduce.TableMapReduceUtil;
 import org.apache.hadoop.mapreduce.Job;

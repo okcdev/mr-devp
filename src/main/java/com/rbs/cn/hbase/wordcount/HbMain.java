@@ -1,7 +1,7 @@
 package com.rbs.cn.hbase.wordcount;
 
 import com.rbs.cn.hbase.hbutils.HbaseInit;
-import com.rbs.cn.utils.HbaseJob;
+import com.rbs.cn.hbase.hbutils.HbaseJob;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.TableName;

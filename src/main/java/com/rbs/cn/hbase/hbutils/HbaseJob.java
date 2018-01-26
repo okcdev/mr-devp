@@ -1,4 +1,4 @@
-package com.rbs.cn.utils;
+package com.rbs.cn.hbase.hbutils;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.TableName;
