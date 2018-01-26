@@ -16,3 +16,7 @@ calc the max temperature for the districnt city
 
 # dim
 parse the region phone number
+
+# hbase
+hbutils
+hbase-wc
