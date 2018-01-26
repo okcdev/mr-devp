@@ -25,6 +25,7 @@ public class HbaseJob {
     private String outputTable;
     private Class<?> mapperOutputKey;
     private Class<?> mapperOutputValue;
+    private int numReduce;
 
     public HbaseJob(){
 
@@ -33,7 +34,7 @@ public class HbaseJob {
     public HbaseJob(String jobName, Configuration conf, Job job, Scan scan,
                     int scanCache, boolean cacheBlock, Class<?> classJar,
                     Class<? extends TableMapper> mapperClass, Class<? extends TableReducer> reduceClass, TableName inputTable,
-                    String outputTable, Class<?> mapperOutputKey, Class<?> mapperOutputValue) {
+                    String outputTable, Class<?> mapperOutputKey, Class<?> mapperOutputValue, int numReduce) {
         this.jobName = jobName;
         this.conf = conf;
         this.job = job;
@@ -47,6 +48,7 @@ public class HbaseJob {
         this.outputTable = outputTable;
         this.mapperOutputKey = mapperOutputKey;
         this.mapperOutputValue = mapperOutputValue;
+        this.numReduce = numReduce;
     }
 
     public String getJobName() {
@@ -151,5 +153,13 @@ public class HbaseJob {
 
     public void setMapperOutputValue(Class<?> mapperOutputValue) {
         this.mapperOutputValue = mapperOutputValue;
+    }
+
+    public int getNumReduce() {
+        return numReduce;
+    }
+
+    public void setNumReduce(int numReduce) {
+        this.numReduce = numReduce;
     }
 }

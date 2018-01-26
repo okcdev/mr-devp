@@ -48,10 +48,10 @@ public class HbaseInit {
 
         TableMapReduceUtil.initTableReducerJob(
                 hbaseJob.getOutputTable(),      // output table
-                null,             // reducer class
+                hbaseJob.getReduceClass(),             // reducer class
                 job);
 
-        job.setNumReduceTasks(0);
+        job.setNumReduceTasks(hbaseJob.getNumReduce()); // at least one, adjust as required
 
         boolean b = job.waitForCompletion(true);
         if (!b) {

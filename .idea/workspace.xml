@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e6f48e8-f0ec-4054-b472-e319a328f2f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/HbaseJob.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/HdfsUtil.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_8_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/utils/HdfsUtil.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rbs/had/MRMain.class" afterPath="$PROJECT_DIR$/target/classes/com/rbs/had/MRMain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rbs/had/MRMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/rbs/had/MRMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/rbs/had/MRReducer.class" afterPath="$PROJECT_DIR$/target/classes/com/rbs/had/MRReducer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rbs-devp.iml" afterPath="$PROJECT_DIR$/rbs-devp.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/common/StringUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/common/StringUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/dim/Dim.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/dim/Dim.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/dim/DimMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/dim/DimMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/dim/DimReducer.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/dim/DimReducer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/had/MRMain.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/had/MRMain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/had/MRMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/had/MRMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/had/MRReducer.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/had/MRReducer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/utils/JobInit.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/JobInit.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/utils/MRInit.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/MRInit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/HbaseInit.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/HbaseInit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/HbaseJob.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/HbaseJob.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,21 +27,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobInit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/JobInit.java">
+      <file leaf-file-name="HbMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/wordcount/HbMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="234">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HbaseInit.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/HbaseInit.java">
+      <file leaf-file-name="HbReducre.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/wordcount/HbReducre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-468">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="360">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,8 +95,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/HbaseInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/JobInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/HbMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/HbReducre.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/HbaseJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/HbaseInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/wordcount/HbMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/wordcount/HbReducre.java" />
       </list>
     </option>
   </component>
@@ -138,6 +127,9 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -286,7 +278,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="had" />
+              <option name="myItemId" value="hbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordcount" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -898,7 +894,7 @@
       <workItem from="1516064311040" duration="30000" />
       <workItem from="1516776135207" duration="619000" />
       <workItem from="1516778843397" duration="22000" />
-      <workItem from="1516929378441" duration="4885000" />
+      <workItem from="1516929378441" duration="6353000" />
     </task>
     <task id="LOCAL-00001" summary="bugfix">
       <created>1515679355182</created>
@@ -932,7 +928,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47675000" />
+    <option name="totallyTimeSpent" value="49143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -991,26 +987,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/had/MRReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/had/MRMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/dim/DimMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1325,10 +1301,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/MRInit.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-server/1.1.11/hbase-server-1.1.11.jar!/org/apache/hadoop/hbase/mapreduce/TableMapReduceUtil.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="13">
+          <caret line="252" column="23" lean-forward="false" selection-start-line="252" selection-start-column="23" selection-end-line="252" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1341,30 +1317,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-server/1.1.11/hbase-server-1.1.11.jar!/org/apache/hadoop/hbase/mapreduce/TableMapReduceUtil.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/MRInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="252" column="23" lean-forward="false" selection-start-line="252" selection-start-column="23" selection-end-line="252" selection-end-column="23" />
+        <state relative-caret-position="502">
+          <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/utils/HbaseJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="115" column="39" lean-forward="false" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
+        <state relative-caret-position="432">
+          <caret line="157" column="31" lean-forward="false" selection-start-line="157" selection-start-column="31" selection-end-line="157" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2780#2781#0" expanded="true" />
-            <element signature="e#2814#2815#0" expanded="true" />
+            <element signature="e#3075#3076#0" expanded="true" />
+            <element signature="e#3109#3110#0" expanded="true" />
+            <element signature="e#4053#4054#0" expanded="true" />
+            <element signature="e#4100#4101#0" expanded="true" />
+            <element signature="e#4142#4143#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/HbaseInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="603">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/wordcount/HbMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbs/cn/hbase/wordcount/HbReducre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
